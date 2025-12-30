@@ -6592,13 +6592,8 @@ or pandas.DataFrame
             and 1 (opaque). Note: The edgecolor is currently not affected by
             this.
 
-        snap : bool, default: :rc:`pcolormesh.snap` (True)
+        snap : bool, default: False
             Whether to snap the mesh to pixel boundaries.
-            Whether to snap the mesh to pixel boundaries.
-
-            .. versionchanged:: 3.4.0
-               The default value changed from *False* to *True* to improve transparency
-               handling. See :ref:`whats-new-3-4-0` for details.
 
         Returns
         -------
@@ -6810,8 +6805,7 @@ or pandas.DataFrame
             See :doc:`/gallery/images_contours_and_fields/pcolormesh_grids`
             for more description.
 
-        snap : bool, default: :rc:`pcolormesh.snap` (True)
-            Whether to snap the mesh to pixel boundaries.
+        snap : bool, default: :rc:`pcolormesh.snap`
             Whether to snap the mesh to pixel boundaries.
 
             .. versionchanged:: 3.4.0
@@ -7031,12 +7025,8 @@ or pandas.DataFrame
         alpha : float, default: None
             The alpha blending value, between 0 (transparent) and 1 (opaque).
 
-        snap : bool, default: :rc:`pcolormesh.snap` (True)
+        snap : bool, default: False 
             Whether to snap the mesh to pixel boundaries.
-
-            .. versionchanged:: 3.4.0
-               The default value changed from *False* to *True* to improve transparency
-               handling. See :ref:`whats-new-3-4-0` for details.
 
         Returns
         -------
