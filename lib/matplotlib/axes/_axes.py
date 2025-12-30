@@ -6792,8 +6792,12 @@ or pandas.DataFrame
             See :doc:`/gallery/images_contours_and_fields/pcolormesh_grids`
             for more description.
 
-        snap : bool, default: False
+        snap : bool, default: :rc:`pcolormesh.snap`
             Whether to snap the mesh to pixel boundaries.
+
+            .. versionchanged:: 3.4.0
+               The default value changed from *False* to *True* to improve transparency
+               handling. See :ref:`whats-new-3-4-0` for details.
 
         rasterized : bool, optional
             Rasterize the pcolormesh when drawing vector graphics.  This can
@@ -7008,7 +7012,11 @@ or pandas.DataFrame
         alpha : float, default: None
             The alpha blending value, between 0 (transparent) and 1 (opaque).
 
+<<<<<<< HEAD
         snap : bool, default: False
+=======
+        snap : bool, default: False 
+>>>>>>> 1e746689e3 (doc fix pcolormesh)
             Whether to snap the mesh to pixel boundaries.
 
         Returns
